@@ -1,0 +1,33 @@
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+    font-size: 200%;
+    background-color: red;
+    color: green;
+}
+.post{
+    font-weight: bold;
+    color: black;
+}
+#comment{
+    font-size: 400%;
+    background-color: blue;
+}
+.comment_span{
+    font-style: italic;
+}
+.flag{
+    height: 100px;
+    width: 600px;
+    border: 2px;
+    border-color: black;
+    border-width: 50px;
+    background-color: blue;
+}
+#flag2{
+    background-color: red;
+}
+#flag3{
+    background-color: blue;
+}
