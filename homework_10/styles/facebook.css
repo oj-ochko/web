@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap");
+body {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #18191a;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1000px 1fr;
+      grid-template-columns: 1fr 1000px 1fr;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  border-bottom: 1px solid #393a3b;
+  padding: 0 .3em;
+  grid-column: span 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  background: #242526;
+}
+
+nav img {
+  cursor: pointer;
+  height: 2.3em;
+  fill: #898b8e;
+}
+
+nav .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .search input {
+  border: 0;
+  background: #3a3b3c;
+  margin-left: .7em;
+  height: 2.3em;
+  border-radius: 50em;
+}
+
+nav .tab-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (36px)[5];
+      grid-template-columns: repeat(5, 36px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10%;
+}
+
+nav .tab-icons img {
+  padding: .3em 2em;
+  border-radius: 10%;
+}
+
+nav .tab-icons img:hover {
+  background: #3a3b3c;
+}
+
+nav .user-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (45px)[4];
+      grid-template-columns: repeat(4, 45px);
+  margin-top: .2em;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+nav .user-icons img {
+  padding: auto;
+  height: 1.7em;
+  background: #3a3b3c;
+  border-radius: 50em;
+  padding: .3em;
+}
+
+nav .user-icons img:hover {
+  background: #4e4f50;
+}
+
+.left-wrapper {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  right: 20px;
+  width: 10em;
+}
+
+.left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.left img {
+  height: 2em;
+}
+
+.left .user-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[9];
+      grid-template-rows: repeat(9, 1fr);
+  margin-left: .3em;
+  margin-top: .5em;
+}
+
+.left .user-info section {
+  border-radius: 15em;
+  padding-left: 1em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .8em;
+}
+
+.left .user-info section:hover {
+  cursor: pointer;
+  background: #303031;
+}
+
+.left .shortcut p {
+  border-top: 1px solid #3e4042;
+  padding-top: .6em;
+  margin: 1em 1.7em;
+  font-weight: bold;
+  color: #797b7e;
+}
+
+.right-wrapper {
+  width: 15em;
+}
+
+.right {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 12em auto 1fr;
+      grid-template-rows: 12em auto 1fr;
+}
+
+.right .title {
+  font-weight: bold;
+  color: #9c9ea2;
+}
+
+.right .sponsor-container {
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.right .sponsor-container p {
+  font-weight: bold;
+}
+
+.right .sponsor-container img {
+  border: 1px solid #18191a;
+  border-radius: 10%;
+  height: 6em;
+}
+
+.right .chat {
+  border-top: 1px solid #898b8e;
+  border-bottom: 1px solid #898b8e;
+  display: -ms-grid;
+  display: grid;
+}
+
+.right .chat .user {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3em auto;
+      grid-template-columns: 3em auto;
+}
+
+.right .chat .user:hover {
+  cursor: pointer;
+}
+
+.right .group-chat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (6em)[3];
+      grid-template-rows: repeat(3, 6em);
+  margin-top: 1em;
+}
+
+.right .group-chat .group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero {
+  width: 1000px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20em 7em auto;
+      grid-template-rows: 20em 7em auto;
+}
+
+.hero .story {
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 2em 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (144px)[5];
+      grid-template-columns: repeat(5, 144px);
+  grid-gap: 10px;
+}
+
+.hero .story .story-user {
+  width: 144px;
+  height: 270px;
+  background: #303031;
+  border: 2px solid #18191a;
+  border-radius: 1em;
+}
+
+.hero .story .story-user:hover {
+  cursor: pointer;
+}
+
+.hero .story .story-user p {
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  bottom: 55px;
+  left: 15px;
+}
+
+.hero .story .story-user .face {
+  border: 3px solid #297be5;
+  top: 5px;
+  left: 5px;
+  height: 2.5em;
+  width: 2.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  position: relative;
+  border-radius: 50em;
+}
+
+.hero .story .story-user .story-content {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 144px;
+  height: 270px;
+  margin-top: -3.2em;
+  border-radius: 1em;
+  z-index: 0;
+}
+
+.hero .story #first p {
+  position: relative;
+  top: 5px;
+  left: 29px;
+}
+
+.hero .story #first .story-content {
+  position: relative;
+  top: 51px;
+  height: 220px;
+  border-radius: 1em 1em 0 0;
+}
+
+.hero .story #first .add {
+  border: 2px solid #303031;
+  border-radius: 100%;
+  position: relative;
+  z-index: 10;
+  width: 2.5em;
+  top: 23px;
+  left: 50px;
+}
+
+.hero .story #last .face {
+  border: 0;
+  left: 10px;
+  top: -1px;
+}
+
+.hero .story #last .arrow {
+  padding: .5em;
+  position: relative;
+  width: 2em;
+  top: 6.5em;
+  left: 4.6em;
+  background: #525355;
+  border-radius: 100%;
+}
+
+.hero .post {
+  background: #242526;
+  border-radius: 1em;
+  margin: -10px 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 5em -.3em;
+      grid-template-rows: 5em -.3em;
+}
+
+.hero .post img {
+  width: 40px;
+}
+
+.hero .input {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  height: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 90%;
+      grid-template-columns: 10% 90%;
+}
+
+.hero .input img {
+  margin-left: 1em;
+}
+
+.hero .input input {
+  border: 0;
+  background: #3a3b3c;
+  margin-right: 2em;
+  border-radius: 50em;
+  font-size: 200%;
+}
+
+.hero .post-icon {
+  cursor: pointer;
+  border-top: 1px solid #3a3b3c;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.hero .post-icon p {
+  font-weight: bold;
+  color: #898b8e;
+}
+
+.hero .post-icon .icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  grid-gap: 10px;
+}
+
+.hero .posts .post-user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3em 2em 584px 3em 4em;
+      grid-template-rows: 3em 2em 584px 3em 4em;
+  -ms-grid-column-align: inherit;
+      justify-self: inherit;
+  margin-top: 20px;
+  margin-left: 7.5em;
+  width: 760px;
+  border-radius: 1em;
+  background: #242526;
+}
+
+.hero .posts .post-user p {
+  font-weight: bold;
+  color: #b0b3b8;
+}
+
+.hero .posts .post-user .top-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5em 1fr 1fr;
+      grid-template-columns: 5em 1fr 1fr;
+}
+
+.hero .posts .post-user .top-container .name {
+  color: white;
+}
+
+.hero .posts .post-user .top-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 2.8em;
+  width: 1.5em;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.hero .posts .post-user .top-container .pro {
+  width: 3em;
+  margin-top: 10px;
+  margin-left: 20px;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  border-radius: 100%;
+}
+
+.hero .posts .post-user .top-container .dots {
+  width: 3em;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.hero .posts .post-user .user-comment {
+  font-weight: 100;
+  color: white;
+  margin-left: 25px;
+}
+
+.hero .posts .post-user .poster {
+  margin-top: 15px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 760px;
+}
+
+.hero .posts .post-user .status {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero .posts .post-user .status p {
+  font-weight: 100;
+}
+
+.hero .posts .post-user .status .like {
+  margin-left: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5em 1fr;
+      grid-template-columns: 2.5em 1fr;
+  justify-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .posts .post-user .status .comments-shares {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 10px;
+}
+
+.hero .posts .post-user .interact {
+  margin: 10px;
+  border-top: 1px solid #3e4042;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% auto 33%;
+      grid-template-columns: 33% auto 33%;
+}
+
+.hero .posts .post-user .interact img {
+  width: 1.3em;
+}
+
+.hero .posts .post-user .interact .stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hero .posts .post-user .interact .stats:hover {
+  cursor: pointer;
+}
+
+.hero .posts .post-user .interact #comment img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=facebook.css.map */
