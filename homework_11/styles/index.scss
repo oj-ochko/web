@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+body{
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.wrapper{
+    p{
+        color: rgb(150, 150, 150);
+    }
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 8em;
+    img{
+        width: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .upper-container{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        .menu{
+            margin-left: 20px;
+            background: rgb(0, 0, 0);
+            display: grid;
+            grid-template-rows: 13em 7em 1fr;
+            .top{
+                div{
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                    align-items: center;
+                    gap: 15px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .playlist-menu{
+                div{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    margin-top: 5px;
+                    padding: 5px 0;
+                    align-items: center;
+                    gap: 10px;
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                }
+            }
+            .hits{
+                margin-right: 1em;
+                padding-top: 1em;
+                border-top: solid 1px rgb(40, 40, 40);
+            }
+        }
+        .hero{
+            display: grid;
+            grid-template-rows: 50% 1fr;
+            .song-info{
+                display: grid;
+                grid-template-columns: 40% 1fr;
+                align-items: center;
+                justify-items: center;
+                background: linear-gradient(rgb(196, 112, 12), black);
+                #background{
+                    width: 20em;
+                    height: auto;
+                }
+                P{
+                    color: #ffffff;
+                    justify-self: left;
+                    font-weight: bold;
+                    font-size: 300%;
+                }
+            }
+            .playlist{
+                display: grid;
+                grid-template-rows: repeat(6,4em);
+                #playing{
+                    .name{
+                        color: rgb(252, 217, 156);
+                    }
+                }
+                .songs{
+                    border-radius: 5px;
+                    align-items: center;
+                    &:hover{
+                        cursor: default;
+                        background: rgb(42, 42, 42);
+                    }
+                    div{
+                        color: rgb(152, 152, 152)
+                    }
+                    .name{
+                        color: white;
+                        font-weight: bold;
+                    }
+                    display: grid;
+                    grid-template-columns: 6% 1fr 1fr 1fr;
+                    .number{
+                        justify-self: right;
+                        margin-right: 1em;
+                    }
+                    .plays{
+                        justify-self: right;
+                    }
+                    .duration{
+                        margin-right: 7em;
+                        justify-self: right;
+                    }
+                }
+            }
+        }
+    }
+}
+.lower-container{
+    background: rgb(24, 24, 24);
+    img{
+        width: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    display: grid;
+    grid-template-columns: 30% 50% 1fr;
+    .left{
+        margin-left: 3em;
+        img{
+            height: 4em;
+            width: auto;
+            object-fit: cover;
+        }
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        justify-self: center;
+        align-items: center;
+        p{
+            color: #ffffff;
+            font-weight: bold;
+            margin-left: 4em;
+        }
+    }
+    .middle{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-self: center;
+        justify-items: center;
+        .options-wrapper{
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            img{
+                height: 1.3em;
+                width: auto;
+            }
+            #play{
+                height: 2.3em;
+            }
+        }
+        .bar{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 15% 1fr 15%;
+        }
+    }
+    .volume{
+        display: grid;
+        grid-template-columns: 16% 1fr;
+        align-self: center;
+        input{
+            margin: 0 10px;
+        }
+    }
+    .slider{
+        background: rgb(83, 83, 83);
+        outline: none;
+    }
+}

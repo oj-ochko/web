@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url(styles/index.css);
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upper-container">
+            <div class="menu">
+                <div class="top">
+                    <div class="dots"><img id="dots" src="styles/img/dots.svg" alt=""></div>  
+                    <div class="home"><img src="styles/img/home.png" alt=""> <p>Home</p></div> 
+                    <div class="search"><img src="styles/img/search.png" alt=""> <p>Search</p></div>    
+                    <div class="library"><img src="styles/img/library.png" alt=""><p>Library</p></div>
+                </div>
+                <div class="playlist-menu">
+                    <div class="playlist-inside"><img src="styles/img/plus.png" alt=""> <p>Create Playlist</p> </div> 
+                    <div class="heart"><img src="styles/img/heart.png" alt=""><p>Liked Songs</p> </div>
+                </div>    
+                <div class="hits">
+                    <p>Today's Top hits</p>
+                </div>
+            </div>
+            <div class="hero">
+                <div class="song-info">
+                    <img id="background" src="styles/img/weeknd.jpg" alt="">
+                    <p>Weeknd - Blinding Lights</p>
+                </div>
+                <div class="playlist">
+                    <div class="songs">
+                        <div class="number">#</div>
+                        <div class="title">TITLE</div>
+                        <div class="plays">PLAYS</div> 
+                        <div class="duration"><img src="styles/img/time.png" alt=""> </div>
+                    </div>
+                    <div id="playing" class="songs">
+                        <div class="number">1</div>
+                        <div class="name">Weeknd - Blinding Light</div>
+                        <div class="plays">156,551,231</div>
+                        <div class="duration">3:23</div>
+                    </div>
+                    <div class="songs">
+                        <div class="number">2</div>
+                        <div class="name">Weeknd - Star Boy</div>
+                        <div class="plays">156,551,231</div>
+                        <div class="duration">3:23</div>
+                    </div>
+                    <div class="songs">
+                        <div class="number">3</div>
+                        <div class="name">Weeknd - Hurt You</div>
+                        <div class="plays">156,551,231</div>
+                        <div class="duration">3:23</div>
+                    </div>
+                    <div class="songs">
+                        <div class="number">4</div>
+                        <div class="name">Weeknd - Wicked Games</div>
+                        <div class="plays">156,551,231</div>
+                        <div class="duration">3:23</div>
+                    </div>
+                    <div class="songs">
+                        <div class="number">5</div>
+                        <div class="name">Weeknd - I Was Never There</div>
+                        <div class="plays">156,551,231</div>
+                        <div class="duration">3:23</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-container">
+            <div class="left">
+                <img src="styles/img/weeknd.jpg" alt="">
+                <p class="song-name"> Weeknd - Blinding Lights</p>
+            </div>
+            <div class="middle">
+                <div class="options-wrapper">
+                    <img src="styles/img/shuffle.png" alt="">
+                    <img src="styles/img/back.png" alt="">
+                    <img id="play" src="styles/img/play-green.png" alt="">
+                    <img src="styles/img/skip.png" alt="">
+                    <img src="styles/img/loop-xxl.png" alt="">
+                </div>
+                <div class="bar">
+                    <p class="left">0:01</p><input type="range" min="1" max="100" value="1" class="slider" id="myrange"><p class="right">3:23</p>
+                </div>
+            </div>
+            <div class="volume">
+                <img src="styles/img/volume.png" alt="">
+                <input type="range" min="1" max="100" value="50" class="slider" id="volumerange">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
